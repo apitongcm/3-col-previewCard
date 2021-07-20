@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* background color */
+    --orange-bg:hsl(31, 77%, 52%);
+    --cyan200-bg:hsl(184, 100%, 22%);
+    --cyan700-bg:hsl(179, 100%, 13%);
+
+    /* font color */
+    --paragraph:hsla(0, 0%, 100%, 0.750);
+    /* background, header, buttons */
+    --others:hsl(0, 0%, 95%); 
+
+    --lexend: 'Lexend Deca', sans-serif;
+    --display: 'Big Shoulders Display', cursive; 
+}
+body{
+    background-color: var(--others);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width:315px;
+    margin:60px 30px;
+    height:auto;
+    justify-content: center;
+}
+
+.context{
+    background-color: aqua;
+    height:380px;
+    padding:35px;
+    display:flex;
+    flex-direction:column;
+    line-height:25px;
+}
+
+.context h1{
+    font-family: var(--display);
+    text-transform: uppercase;
+    color:var(--others);
+    margin:30px 0 20px 0;
+}
+
+.context p{
+    font-family: var(--lexend);
+    color:var(--paragraph);
+    margin:10px 0 20px 0;
+    
+}
+
+img{
+    width:50px;
+}
+
+button{
+    width:120px;
+    padding:10px 20px 10px 10px;
+    border-radius:2rem;
+    border-style: none;
+    background-color: var(--others);
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: transparent;
+    border:2px solid var(--others);
+    color:var(--others);
+}
+
+.btn-org{
+    color:var(--orange-bg);
+}
+
+.btn-cyn { 
+    color:var(--cyan200-bg);
+}
+
+.btn-drkcyn{
+    color:var(--cyan700-bg);
+}
+
+.orange{
+    background-color: var(--orange-bg);
+}
+
+.cyan{
+    background-color: var(--cyan200-bg);
+}
+
+.drk-cyn{
+    background-color: var(--cyan700-bg);
+}
+
+.attribution { 
+    padding:35px 70px;
+    text-align: center;
+}
+
+.attribution a{ 
+    color:var(--cyan700-bg);
+}
+
+@media only screen and (min-width:424px){
+    .container{
+        padding:0;
+        width:100vw;
+        margin:0; 
+    }
+
+    .context{
+        padding:50px;
+    }
+
+    img{
+        width:100px;
+    }
+}
+
+@media only screen and (min-width:1020px){
+    .container{
+        width:900px;
+        margin:120px 300px 70px 300px;
+        flex-direction:row;
+        height:auto;
+    }
+
+    img{
+        width:50px;
+    }
+
+    .context{
+        padding:50px;
+        height:520px;
+       
+    }
+
+    .container p{
+        margin:30px 0;
+        
+        
+    }
+
+    button{
+        margin:100px 0;
+        cursor: pointer;
+    }
+
+    .attribution{
+        padding:0;
+    }
+}
